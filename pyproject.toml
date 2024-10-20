@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "law-rag"
+version = "0.1.0"
+description = "RAG application for Georgian criminal law"
+authors = ["Halvadar <levanbaidoshvili@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+langchain = "^0.3.4"
+langchain-community = "^0.3.3"
+langchain-chroma = "^0.1.4"
+pypdf = "^5.0.1"
+langchain-text-splitters = "^0.3.0"
+langchain-cohere = "^0.3.1"
+tenacity = "^9.0.0"
+python-dotenv = "^1.0.1"
+langchain-openai = "^0.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
