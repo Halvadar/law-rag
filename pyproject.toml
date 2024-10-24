@@ -1,9 +1,11 @@
 [tool.poetry]
+package-mode = false
 name = "law-rag"
 version = "0.1.0"
 description = "RAG application for Georgian criminal law"
 authors = ["Halvadar <levanbaidoshvili@gmail.com>"]
 readme = "README.md"
+
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -16,8 +18,13 @@ langchain-cohere = "^0.3.1"
 tenacity = "^9.0.0"
 python-dotenv = "^1.0.1"
 langchain-openai = "^0.2.3"
+fastapi = {extras = ["standard"], version = "^0.115.3"}
 
+
+[tool.poetry.group.dev.dependencies]
+uvicorn = "^0.32.0"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
