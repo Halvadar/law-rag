@@ -13,8 +13,6 @@ text = ""
 for page in pages:
     text += page.page_content
 
-# print first 1000 characters
-
 
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=1000,

@@ -22,5 +22,3 @@ rag_chain = (
     | llm
     | StrOutputParser()
 )
-
-rag_chain.invoke("კანონი 5")
